@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC  
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"  
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+       
+<tiles-definitions>  
+  
+   <!-- Base Definition -->
+   <definition name="base-definition" template="/WEB-INF/tiles/layouts/baseLayout.jsp">  
+       <put-attribute name="title" value="" />
+       <put-attribute name="header" value="/WEB-INF/tiles/template/defaultHeader.jsp" />
+       <put-attribute name="body" value="" />
+        <put-attribute name="menu" value="/WEB-INF/tiles/template/defaultMenu.jsp" />
+       <put-attribute name="footer" value="/WEB-INF/tiles/template/defaultFooter.jsp" />
+   </definition>
+   
+   <!-- Admin assets list Page -->
+   <definition name="index" extends="base-definition">
+       <put-attribute name="title" value="Dashbord" />  
+       <put-attribute name="body" value="/WEB-INF/jsp/index.jsp" />
+   </definition>
+   
+   
+    <definition name="document" extends="base-definition">
+       <put-attribute name="title" value="document" />  
+       <put-attribute name="body" value="/WEB-INF/jsp/document.jsp" />
+   </definition>
+   
+    <definition name="folder" extends="base-definition">
+       <put-attribute name="title" value="folder" />  
+       <put-attribute name="body" value="/WEB-INF/jsp/folder.jsp" />
+   </definition>
+   
+  
+   
+</tiles-definitions>
